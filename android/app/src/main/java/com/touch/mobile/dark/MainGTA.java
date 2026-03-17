@@ -1,4 +1,4 @@
-package com.touch.mobile.dark;
+package com.caspian.rp;
 
 import android.content.Intent;
 import android.content.res.Configuration;
