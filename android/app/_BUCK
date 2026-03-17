@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.touch.mobile.dark",
+    package = "com.caspian",
 )
 
 android_resource(
     name = "res",
-    package = "com.touch.mobile.dark",
+    package = "com.caspian",
     res = "src/main/res",
 )
 
