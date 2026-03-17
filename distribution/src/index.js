@@ -182,7 +182,7 @@ return new Promise(async () => {
 						bonus: true,
 						name: 'PRO - Server',
 						description: 'SA-MP Mobile',
-						address: '176.32.39.214:7777',
+						address: '188.127.241.74:4157',
 						sampVersion: '0.3.7',
 					},
 					{
@@ -204,7 +204,7 @@ return new Promise(async () => {
 						bonus: false,
 						name: 'Localhost',
 						description: 'SA-MP Mobile',
-						address: '127.0.0.1:7777',
+						address: '188.127.241.74:4157',
 						sampVersion: '0.3.7',
 					},
 				],
