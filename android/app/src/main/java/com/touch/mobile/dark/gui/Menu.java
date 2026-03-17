@@ -3,10 +3,10 @@ package com.touch.mobile.dark.gui;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 
-import com.touch.mobile.dark.R;
-import com.touch.mobile.dark.gui.adapters.DialogMenuAdapter;
-import com.touch.mobile.dark.gui.models.DataDialogMenu;
-import com.touch.mobile.dark.gui.util.Utils;
+import com.caspian.R;
+import com.caspian.gui.adapters.DialogMenuAdapter;
+import com.caspian.gui.models.DataDialogMenu;
+import com.caspian.gui.util.Utils;
 import com.nvidia.devtech.NvEventQueueActivity;
 
 import android.content.Context;
