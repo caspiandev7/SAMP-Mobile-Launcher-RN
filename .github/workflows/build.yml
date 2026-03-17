@@ -1,38 +1,22 @@
-name: Build Android APK
-
-on:
-  workflow_dispatch:
-
+name: Build Launcher
+on: [workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
+      - uses: actions/checkout@v4
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'zulu'
-          java-version: '11'
-
+          node-version: 18
       - name: Install Dependencies
         run: yarn install
-
-      - name: Build APK
+      - name: Build Android
         run: |
           cd android
-          chmod +x ./gradlew
-          ./gradlew assembleDebug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+          chmod +x gradlew
+          ./gradlew assembleRelease
+      - uses: actions/upload-artifact@v4
         with:
-          name: SAMP-Launcher-APK
-          path: android/app/build/outputs/apk/debug/*.apk
+          name: Launcher-APK
+          path: android/app/build/outputs/apk/release/*.apk
